@@ -34,12 +34,16 @@ img {
 }
 
 @media screen and (max-width: 576px) {
+    .nav-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
     #icon {
         display: block;
-        content: "";
         width: 40px;
         height: 40px;
-        padding: 20px;
     }
 
     .link-items {
