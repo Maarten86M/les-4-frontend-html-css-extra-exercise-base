@@ -34,6 +34,7 @@ h1 {
 .highlight {
     color: hsl(210, 93%, 19%);
     font-weight: 400;
+    position: relative;
 }
 
 footer {
@@ -43,4 +44,41 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/*OPDRACHTEN: */
+
+.compliment P:before {
+    content: "''";
+}
+
+.compliment p:after {
+    content: "''";
+}
+
+/*HOVER OPDRACHT*/
+
+.highlight:hover::after{
+    position: absolute;
+    content: "Dit is een latijns woord";
+    width: 180px;
+    height: 40px;
+    background-color: hsl(29, 100%, 47%);
+    top: -50px;
+    left: -20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.highlight:hover::before{
+    position: absolute;
+    content: "";
+    border-top:solid 10px hsl(29, 100%, 47%);
+    border-right:solid 10px transparent;
+    border-bottom:solid 10px transparent;
+    border-left:solid 10px transparent;
+    top: -10px;
+    left: 50px;
 }
