@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --background-color: hsl(212, 36%, 90%);
+    --bg-item-one: hsl(212, 43%, 65%);
+    --bg-item-two: hsl(208, 48%, 47%);
+}
+
+#grid-container-two {
+    margin: 8px;
+    padding: 8px;
+    background-color: var(--background-color);
+    width: 900px;
+    row-gap: 16px;
+    column-gap: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px 150px;
+    grid-template-areas:    ". . . box-one"
+                            "box-two box-two box-three ."
+                            "box-two box-two box-four box-five"
+                            ". . . ."
+                            ". box-six box-seven box-seven"
+                            "box-eight box-nine box-seven box-seven"
+                            "box-ten . . .";
+}
+
+.grid-two-item {
+    color: black;
+    padding: 8px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--background-color);
+}
+
+#grid-box-one {
+    grid-area: box-one;
+    background-color: var(--bg-item-one);
+
+}
+
+#grid-box-two {
+    grid-area: box-two;
+    background-color: var(--bg-item-two);
+}
+
+#grid-box-three {
+    grid-area: box-three;
+    background-color: var(--bg-item-one);
+}
+
+#grid-box-four {
+    grid-area: box-four;
+    background-color: var(--bg-item-one);
+}
+
+#grid-box-five {
+    grid-area: box-five;
+    background-color: var(--bg-item-one);
+}
+
+#grid-box-six {
+    grid-area: box-six;
+    background-color: var(--bg-item-one);
+}
+
+#grid-box-seven {
+    grid-area: box-seven;
+    background-color: var(--bg-item-two);
+}
+
+#grid-box-eight {
+    grid-area: box-eight;
+    background-color: var(--bg-item-one);
+}
+
+#grid-box-nine {
+    grid-area: box-nine;
+    background-color: var(--bg-item-one);
+}
+
+#grid-box-ten {
+    grid-area: box-ten;
+    background-color: var(--bg-item-one);
+}
