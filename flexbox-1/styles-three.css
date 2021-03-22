@@ -1,0 +1,49 @@
+/*Base styles*/
+
+body {
+    background-color: hsl(35, 40%, 91%);
+    color: hsl(25, 22%, 56%);
+    font-family: Avenir, Arial, sans-serif;
+    ;
+}
+
+.container {
+    background-color: hsl(35, 40%, 95%);
+    border-radius: 4px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-basis: 1200px;
+    flex-wrap: nowrap;
+
+}
+
+.item {
+    background-color: hsl(35, 40%, 98%);
+    border: 1px solid hsl(35, 40%, 78%);
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px hsl(35, 40%, 78%);
+    position: relative;
+    padding: 16px;
+    margin: 16px;
+}
+
+#aside {
+    flex-basis: 300px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+#main {
+    flex-basis: 900px;
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
