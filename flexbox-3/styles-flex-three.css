@@ -1,0 +1,50 @@
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: 1200px;
+    height: 70px;
+    flex-wrap: nowrap;
+    background-color: hsl(215, 57%, 13%);
+    color: white;
+    font-family: Montserrat, sans-serif;
+}
+
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    flex-wrap: nowrap;
+    flex-basis: 1200px;
+}
+
+#icon {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    #icon {
+        display: block;
+        content: "";
+        width: 40px;
+        height: 40px;
+        padding: 20px;
+    }
+
+    .link-items {
+        display: none;
+    }
+
+
+}
